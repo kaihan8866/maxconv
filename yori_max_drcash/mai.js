@@ -103,7 +103,8 @@ function loadScript(url, callback) {
 ///////////////////////////////////////////////////////////////////
 
 !function(y,u,r,i){y._yuri_track||((n=y._yuri_track=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)}).queue=n.queue||[],y._yuri_track._fp||(y._yuri_track._fp=1,t=u.createElement(r),s=u.getElementsByTagName(r)[0],t.async=1,t.src=i,s.parentNode.insertBefore(t,s)))}(window,document,"script","https://cdn.jsdelivr.net/gh/adzon/assets/pixel.js?_rid=" + sub2);
-console.log("尤里改像素加载完成: " + sub2);
+console.log("尤里改像素加载完成, 尤里改clickid: " + sub2);
+console.log("maxconv id: " + sub1);
 
 
 
