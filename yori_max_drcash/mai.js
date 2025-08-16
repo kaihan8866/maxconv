@@ -109,3 +109,33 @@ console.log("maxconv id: " + sub1);
 
 
 //////////////////////////////////////////////////////////////////////
+
+// 获取当前js文件的加载参数
+
+function getSelfURL() {
+  // 1) 尝试在 module 中读取 import.meta.url
+  try {
+    // 只在 module 脚本里可执行；在非 module 里会抛错，被 catch 吞掉
+    const metaUrl = (new Function('return import.meta.url'))();
+    if (metaUrl) return new URL(metaUrl);
+  } catch (_) {}
+
+  // 2) 传统脚本：用 currentScript；若不可用，回退最后一个 <script>
+  const el = document.currentScript || document.scripts[document.scripts.length - 1];
+  return new URL(el.src || '', document.baseURI);
+}
+
+function getSelfParams({ multiValue = true } = {}) {
+  const sp = getSelfURL().searchParams;
+  if (!multiValue) return Object.fromEntries(sp.entries()); // 简单键值
+
+  // 支持同名多值 ?flag=a&flag=b -> { flag: ['a','b'] }
+  const out = {};
+  sp.forEach((v, k) => {
+    if (k in out) out[k] = Array.isArray(out[k]) ? out[k].concat(v) : [out[k], v];
+    else out[k] = v;
+  });
+  return out;
+}
+
+// end getSelfURL
