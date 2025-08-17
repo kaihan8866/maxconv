@@ -1,3 +1,35 @@
+//////////////////////////////////////////////////////////////////////
+
+// 获取当前js文件的加载参数
+
+function getSelfURL() {
+  // 1) 尝试在 module 中读取 import.meta.url
+  try {
+    // 只在 module 脚本里可执行；在非 module 里会抛错，被 catch 吞掉
+    const metaUrl = (new Function('return import.meta.url'))();
+    if (metaUrl) return new URL(metaUrl);
+  } catch (_) {}
+
+  // 2) 传统脚本：用 currentScript；若不可用，回退最后一个 <script>
+  const el = document.currentScript || document.scripts[document.scripts.length - 1];
+  return new URL(el.src || '', document.baseURI);
+}
+
+function getSelfParams({ multiValue = true } = {}) {
+  const sp = getSelfURL().searchParams;
+  if (!multiValue) return Object.fromEntries(sp.entries()); // 简单键值
+
+  // 支持同名多值 ?flag=a&flag=b -> { flag: ['a','b'] }
+  const out = {};
+  sp.forEach((v, k) => {
+    if (k in out) out[k] = Array.isArray(out[k]) ? out[k].concat(v) : [out[k], v];
+    else out[k] = v;
+  });
+  return out;
+}
+
+// end getSelfURL
+
 // start normalizePhone
 
 // ====== 用法示例 ======
@@ -106,36 +138,17 @@ function loadScript(url, callback) {
 console.log("尤里改像素加载完成, 尤里改clickid: " + sub2);
 console.log("maxconv id: " + sub1);
 
+const pixelID = getSelfParams().pixel;
+
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+console.log('pixelID', pixelID);
+fbq('init', pixelID);
 
 
-//////////////////////////////////////////////////////////////////////
-
-// 获取当前js文件的加载参数
-
-function getSelfURL() {
-  // 1) 尝试在 module 中读取 import.meta.url
-  try {
-    // 只在 module 脚本里可执行；在非 module 里会抛错，被 catch 吞掉
-    const metaUrl = (new Function('return import.meta.url'))();
-    if (metaUrl) return new URL(metaUrl);
-  } catch (_) {}
-
-  // 2) 传统脚本：用 currentScript；若不可用，回退最后一个 <script>
-  const el = document.currentScript || document.scripts[document.scripts.length - 1];
-  return new URL(el.src || '', document.baseURI);
-}
-
-function getSelfParams({ multiValue = true } = {}) {
-  const sp = getSelfURL().searchParams;
-  if (!multiValue) return Object.fromEntries(sp.entries()); // 简单键值
-
-  // 支持同名多值 ?flag=a&flag=b -> { flag: ['a','b'] }
-  const out = {};
-  sp.forEach((v, k) => {
-    if (k in out) out[k] = Array.isArray(out[k]) ? out[k].concat(v) : [out[k], v];
-    else out[k] = v;
-  });
-  return out;
-}
-
-// end getSelfURL

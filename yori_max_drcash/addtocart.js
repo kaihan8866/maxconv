@@ -6,3 +6,6 @@ loadScript('https://t.primefitinsight.com/conv.js?clid=' + sub1 + '&event=addtoc
 
 
 _yuri_track("AddToCart");
+fbq('track', 'AddToCart', {
+    external_id: sub2
+});

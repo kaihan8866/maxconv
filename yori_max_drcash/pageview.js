@@ -5,3 +5,6 @@ loadScript('https://t.primefitinsight.com/conv.js?clid=' + sub1 + '&event=pagevi
 
 
 _yuri_track("PageView");
+fbq('track', 'PageView', {
+    external_id: sub2
+});
