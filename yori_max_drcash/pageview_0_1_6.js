@@ -19,7 +19,7 @@ fbq('track', eventName + '-' + sub3, {}, {eventID: sub2 + sub3 + '-' + eventName
 console.log('FB event:', eventName + '-' + sub3);
 
 
-const mc_ad_id = params.get('mc_ad_id');; // mc_ad_id
+const mc_ad_id = params.get('mc_ad_id'); // mc_ad_id
 console.log("Ad Id:", mc_ad_id);
 
 const adName = AdConfig && AdConfig[mc_ad_id];
