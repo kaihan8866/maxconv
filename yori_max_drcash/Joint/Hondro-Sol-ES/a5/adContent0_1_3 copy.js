@@ -63,5 +63,28 @@ const AdContent = {
     ".article--title b": `"Mi último viaje fue de mi dormitorio a una silla de ruedas", relata con crudeza Ana Câșlari. "Todos mis sueños y planes quedaron destrozados por la artrosis".`,
     ".ajOqPE5L h2": `Pero en su momento más oscuro, descubrió una solución natural de 4 ingredientes que le devolvió el control de su cuerpo y la libertad para volver a soñar con el mapa del mundo.`,
     ".hore-img": '<img style="width: 100%; height: auto; display: block;" src=\"' + baseURL + '\/images\/3-3.png\" />'
+  },
+  "MGID-合页": {
+    ".article--title b": `EXCLUSIVA: El "sonido" de bisagra oxidada en sus rodillas es el primer síntoma del rápido deterioro del cartílago, revela un estudio de Barcelona.`,
+    ".ajOqPE5L h2": `Miles de personas ya están utilizando este método de 4 ingredientes naturales para silenciar el "chirrido" y evitar la silla de ruedas.`,
+    ".hore-img": '<img style="width: 100%; height: auto; display: block;" src=\"' + baseURL + '\/images\/1.png\" />'
+  },
+  // 创意 #2: 拧不开的瓶盖
+  "MGID-瓶盖": {
+    ".article--title b": `Si abrir una botella ya es una lucha, podría estar ignorando la "epidemia silenciosa" que conduce a la inmovilidad total, advierten especialistas.`,
+    ".ajOqPE5L h2": `Descubra la fórmula natural de 4 ingredientes que las farmacias no quieren que conozca para recuperar la fuerza perdida en semanas.`,
+    ".hore-img": '<img style="width: 100%; height: auto; display: block;" src=\"' + baseURL + '\/images\/2.png\" />'
+  },
+  // 创意 #3: 难解的绳结
+  "MGID-绳结": {
+    ".article--title b": `La sensación de "nudo" en la espalda que ignora por la mañana es la misma que postró a Ana Câșlari en una silla de ruedas.`,
+    ".ajOqPE5L h2": `Su increíble recuperación se debió a un truco de 4 ingredientes naturales que "desata" las articulaciones y que los médicos corruptos odian.`,
+    ".hore-img": '<img style="width: 100%; height: auto; display: block;" src=\"' + baseURL + '\/images\/3.png\" />'
+  },
+  // 创意 #4: 蒙尘的园艺工具
+  "MGID-园艺": {
+    ".article--title b": `ADVERTENCIA MÉDICA: El estudio que vincula el abandono de hobbies como la jardinería con una probabilidad del 85% de acabar en silla de ruedas en 2 años.`,
+    ".ajOqPE5L h2": `Pero el mismo estudio reveló un método de 4 ingredientes naturales que puede revertir este pronóstico y devolverle la alegría de su jardín.`,
+    ".hore-img": '<img style="width: 100%; height: auto; display: block;" src=\"' + baseURL + '\/images\/4.png\" />'
   }
 };
