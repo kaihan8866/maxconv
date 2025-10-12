@@ -149,5 +149,41 @@ const AdContent = {
     "情感转变-3": {
         ".wrapper .title": "OTO EFEKT RESETU METABOLIZMU, KTÓREGO BOJĄ SIĘ FIRMY FARMACEUTYCZNE: Studentka z Krakowa stworzyła unikalną ziołową formułę, która pozwala przejść od \"przed\" do \"po\" w mniej niż 3 miesiące, bez diety i ćwiczeń.",
         ".alstep54_sglCGFT6q": '<img style="width: 100%; height: auto; display: block;" src=\"' + baseURL + '\/images\/4-3.png\" />'
+    },
+    "吃蛋糕的女性": {
+        ".wrapper .title": "TAK, TO MOŻLIWE! Zobacz, jak unikalna ziołowa formuła studentki z Krakowa pozwala jeść ulubione potrawy i chudnąć 8-15 kg miesięcznie, resetując metabolizm do trybu spalania tłuszczu.",
+        ".alstep54_sglCGFT6q": '<img style="width: 100%; height: auto; display: block;" src=\"' + baseURL + '\/images\/1.png\" />'
+    },
+    "衣橱惊喜": {
+        ".wrapper .title": "PRZYPOMNIJ SOBIE TO UCZUCie! Studentka z Krakowa stworzyła unikalną ziołową formułę, która resetuje metabolizm i pozwala wrócić do dawnej figury, jedząc to, co kochasz.",
+        ".alstep54_sglCGFT6q": '<img style="width: 100%; height: auto; display: block;" src=\"' + baseURL + '\/images\/2.png\" />'
+    },
+    "故事起点": {
+        ".wrapper .title": "JEŚLI CZUJESZ, ŻE TO JUŻ KONIEC WALKI, ZOBACZ TO: Studentka z Krakowa znalazła wyjście z tej samej sytuacji. Stworzyła unikalną ziołową formułę, która pomaga schudnąć 8-15 kg miesięcznie bez diety i ćwiczeń!",
+        ".alstep54_sglCGFT6q": '<img style="width: 100%; height: auto; display: block;" src=\"' + baseURL + '\/images\/3.png\" />'
+    },
+    "在厨房研究的学生": {
+        ".wrapper .title": "MEDIA SĄ ZSZOKOWANE! Zapiski z tego zeszytu to przełom w walce z nadwagą. Studentka z Krakowa stworzyła unikalną ziołową formułę, która pomaga schudnąć 8-15 kg miesięcznie bez diety i ćwiczeń!",
+        ".alstep54_sglCGFT6q": '<img style="width: 100%; height: auto; display: block;" src=\"' + baseURL + '\/images\/4.png\" />'
+    },
+    "跑步机被打叉": {
+        ".wrapper .title": "OTO PRAWDZIWY POWÓD, DLACZEGO NIE CHUDNIESZ: To nie brak silnej woli, a spowolniony metabolizm. Studentka z Krakowa stworzyła ziołową formułę, która resetuje go do trybu spalania tłuszczu w 48 godzin!",
+        ".alstep54_sglCGFT6q": '<img style="width: 100%; height: auto; display: block;" src=\"' + baseURL + '\/images\/5.png\" />'
+    },
+    "朝鲜蓟与胶囊": {
+        ".wrapper .title": "SEKRET ZNANY OD WIEKÓW, TERAZ ODKRYTY NA NOWO: Studentka z Krakowa stworzyła unikalną formułę opartą na ekstrakie z karczocha, która pomaga schudnąć 8-15 kg miesięcznie. To zagrożenie dla drogich i nieskutecznych diet.",
+        ".alstep54_sglCGFT6q": '<img style="width: 100%; height: auto; display: block;" src=\"' + baseURL + '\/images\/6.png\" />'
+    },
+    "克拉科夫地图与瓶子": {
+        ".wrapper .title": "OTO ODKRYCIE, O KTÓRYM MÓWI CAŁA POLSKA: Studentka z Krakowa znalazła sposób, by schudnąć 8-15 kg miesięcznie bez diety i ćwiczeń. Zobacz jej unikalną ziołową formułę!",
+        ".alstep54_sglCGFT6q": '<img style="width: 100%; height: auto; display: block;" src=\"' + baseURL + '\/images\/7.png\" />'
+    },
+    "内在重启": {
+        ".wrapper .title": "SEKRET PRAWDZIWEJ PRZEMIANY ZACZYNA SIĘ WEWNĄTRZ: Studentka z Krakowa odkryła, jak naturalnie \"obudzić\" metabolizm, by zaczął pracować na Twoją korzyść, spalając tłuszcz 24/7.",
+        ".alstep54_sglCGFT6q": '<img style="width: 100%; height: auto; display: block;" src=\"' + baseURL + '\/images\/8.png\" />'
+    },
+    "她们的秘密": {
+        ".wrapper .title": "OTO SEKRET, KTÓRYM POLKI DZIELĄ SIĘ SZEPTEM: To nie drogie zabiegi, a prosta, 2-składnikowa formuła studentki z Krakowa. Zobacz, dlaczego jest tak skuteczna i jak tysiące kobiet już z niej skorzystało.",
+        ".alstep54_sglCGFT6q": '<img style="width: 100%; height: auto; display: block;" src=\"' + baseURL + '\/images\/9.png\" />'
     }
 };
