@@ -4,6 +4,13 @@ const currentScriptURL = document.currentScript.src;
 // 提取 baseURL (到最后一个'/'之前的部分)
 const baseURL = currentScriptURL.substring(0, currentScriptURL.lastIndexOf('/'));
 
+$(document).ready(function() {
+    const current = $('.inL_837661');
+    current.prev().remove();
+    current.next().remove();
+    current.remove();
+    console.log("remove inL_837661");
+});
 
 const AdContent = {
     "灵感瞬间-1": {
