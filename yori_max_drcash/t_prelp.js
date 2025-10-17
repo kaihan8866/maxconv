@@ -102,9 +102,9 @@ console.log('FB event:', eventName);
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
     const scrollPercent = (scrollTop / docHeight) * 100;
 
-    if (scrollPercent > 50 && !scroll50Fired) {
+    if (scrollPercent > 30 && !scroll50Fired) {
       scroll50Fired = true;
-      sendScrollEvent(50);
+      sendScrollEvent(30);
     }
 
     if (scrollPercent > 95 && !scroll100Fired) {
