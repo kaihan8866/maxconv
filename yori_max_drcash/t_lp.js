@@ -111,31 +111,4 @@ fbq('track', 'ViewContent');
     }, 30000); // 30秒
 
 
-    // 表单选择器（修改为你实际的ID或class）
-    // 监听表单提交
-    $('.orderForm').on('submit', function (e) {
-        e.preventDefault(); // 阻止默认立即提交
-
-        var form = this; // 保存表单引用以便后续提交
-
-        const eventName = "AddToCart";
-        // maxconv event
-        loadScript('https://t.primefitinsight.com/conv.js?clid=' + sub1 + '&event=' + eventName, function () {
-            console.log("maxconv eventName: " + eventName);
-        });
-
-        // yuri event
-        _yuri_track(eventName);
-        console.log('yuri event:', eventName);
-
-        // FB event
-        fbq('track', eventName, {}, { eventID: sub2 + '-' + eventName });
-        console.log('FB event:', eventName);
-
-
-        // ✅ 延迟表单真实提交（保证事件送出）
-        setTimeout(function () {
-            form.submit();
-        }, 400); // 300~500ms 最佳（不宜太长）
-    });
 })();
