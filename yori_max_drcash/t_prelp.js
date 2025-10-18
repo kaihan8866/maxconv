@@ -107,9 +107,9 @@ console.log('FB event:', eventName);
       sendScrollEvent(30);
     }
 
-    if (scrollPercent > 95 && !scroll100Fired) {
+    if (scrollPercent > 70 && !scroll100Fired) {
       scroll100Fired = true;
-      sendScrollEvent(100);
+      sendScrollEvent(70);
     }
   });
 
